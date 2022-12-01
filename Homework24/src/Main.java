@@ -19,5 +19,11 @@ public class Main {
         System.out.println(Petya);
         System.out.println(Petya.hashCode());
         System.out.println(Ivan.equals(Petya));
+        
+         if (Petya.equals(Ivan) && Ivan.hashCode() == Petya.hashCode()) {
+            System.out.println("your user equals ivan");
+        }else{
+            System.out.println("your user unequals ivan");
+        }
     }
 }
